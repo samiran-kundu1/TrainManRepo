@@ -1,12 +1,11 @@
 <section class="filter-wrapper">
     <div class="keyword-wrapper">
-   <input id="myInput" #searcht type="text" (keyup) = "search(searcht.value)" placeholder="type to search ..."/>
+   <input id="myInput" #searcht type="text" (keyup) = "search(searcht.value)" placeholder="type to search movie..."/>
      </div>
    <ul class="filter-select">
     <div  *ngFor = "let movie of searchedMovies">
         <h1>{{movie.Name}} {{movie.Year}}</h1>
         
     </div> 
-   <span class="tags"></span>
    </ul>
    </section>

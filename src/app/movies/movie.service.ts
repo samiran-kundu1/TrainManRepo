@@ -1,24 +1,12 @@
 import { Movie } from './Movie';
 export class MovieService{
 
-    movies:Movie[]=[
-         {
-            Name:"Iron Man",
-            Year : "2008",
-    },
-    {
-        Name:"Super Man",
-        Year : "2011"
-},
-{
-    Name:"Spider Man",
-    Year : "2002"
-},
-{
-    Name:"THOR",
-    Year : "2010"
-}
-];
+    movies:Array<Movie> = 
+    [
+        new Movie("Iron Man","image\img1.jpg","2008"),
+        new Movie("Thor","image\img1.jpg","2010"),
+        new Movie("Captain America","image\img1.jpg","2008"),
+    ]
     
     //["movie1","movie2","movie3"];
     searchedMovies :string[];
